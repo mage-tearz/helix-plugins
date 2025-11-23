@@ -23,8 +23,7 @@ jobs:
       with:
         host: ix.greywaterstud.io
         username: shuttle
-        key: ${{ secrets.shuttle_ssh }}
-        passphrase: ${{ secrets.shuttle_ssh_pass }}
+        password: ${{ secrets.shuttle_ssh_pass }}
         port: ${{ secrets.shuttle_port }}
         script: |
           cd ~/helix-plugins
